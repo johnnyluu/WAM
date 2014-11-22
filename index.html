@@ -18,8 +18,9 @@
 </head>
 <body id="home">
     <header class="pure-g top">
-        <div class="pure-u-1-6" id="logo">logo</div>
-        <div class="pure-u-16-24">
+        <div class="pure-u-1-6 nav" id="logo">
+        <img src="images/logo-top.svg" class="pure-img" alt="Wildlife Australia Magazine" /></div>
+        <div class="pure-u-16-24 nav">
             <ul id="nav">
                 <li class="nav-li active">
                     <a id="nav-a" href="#">Home</a>
@@ -27,8 +28,21 @@
                 <li class="nav-li">
                     <a id="nav-a" href="#">News</a>
                 </li>
-                <li class="nav-li">
+                <li class="nav-li has-sub">
                     <a id="nav-a" href="#">Magazine</a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav-li">
+                            <a class="sub-nav-a" href="#">December 2014</a>
+                        </li>
+                        <li class="sub-nav-li">|</li>
+                        <li class="sub-nav-li">
+                            <a class="sub-nav-a" href="#">November 2014</a>
+                        </li>
+                        <li class="sub-nav-li">|</li>
+                        <li class="sub-nav-li">
+                            <a class="sub-nav-a" href="#">October 2014</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-li">
                     <a id="nav-a" href="#">Competition</a>
@@ -41,26 +55,77 @@
                 </li>
             </ul>
         </div>
-        <div class="pure-u-1-6" id="sub-top">subscribe</div>
+        <div class="pure-u-1-6 nav" id="sub-top">
+            <div class="nav-li active">
+                <a href="">+subscribe</a>
+            </div>
+        </div>
+        <div id="subnav" class="pure-u-1-1"></div>
     </header>  
     <div id="slider-div">  
         <div class="container" id="slider">
             <div id="logo">
                 <img class="pure-img" id="logo-b"src="images/logo.png"></img>
             </div>
-            <p class="highlight-b  tag tag-left" id="slogan"><big>Australia's leading nature magazine</big></p>
-            <a href="#" class="highlight tag tag-left" id="subscribe"></i>+subscribe</a>
         </div>
     </div>
-    <main class="pure-g container" id="main">
-        <div id="go" class="highlight">
-            <a href="#main">GO</a>
+    <div id="slider-overlay">
+        <div class="container">
+            <p class="highlight-b  tag tag-left" id="slogan"><big>Australia's leading nature magazine</big></p>
+            <a href="#" class="highlight tag tag-left" id="subscribe"></i>+Subscribe</a>
+            <span class="copyright">
+                <span id="detail"><span>Photograph by John Doe</span></span>
+                <i class="fa fa-copyright"></i>
+            </span>
         </div>
+    </div>
+    <div id="shadow" class="container"></div>
+    <main class="pure-g container" id="main">
+        <a id="go" class="highlight tag" href="#main"><i class="fa  fa-chevron-down"></i></a>
         <div class="pure-u-2-3">
-            <h1 id="featured"><span class="highlight-t">FEATURED</span>STORIES</h1>
+        <div class="pure-g"  id="featured">
+            <h1><span class="highlight-t">FEATURED</span>STORIES</h1>
+            <!-- stories, image into background, content into slide -->
+            <div class="pure-u-1 story" style="background: url('images/3.jpg'); background-size: cover; background-position: center;">
+                <div class="slide">
+                    <h2>Big Article with a Long Title</h2>
+                    <p>In viverra dolor sit amet mauris accumsan cursus. Sed rutrum, nulla eget faucibus egestas, enim arcu gravida risus, ut mollis felis justo eu diam. Fusce vitae odio egestas, euismod est sit amet, finibus arcu. Sed dolor ex, condimentum eget ex et, fringilla consectetur massa. Curabitur rhoncus accumsan dolor, eget porta urna volutpat et. Nullam quis venenatis erat. Nulla scelerisque dignissim lacus, at ultricies lectus pellentesque vel. Ut consequat tortor at metus rhoncus finibus. Vivamus vel purus massa.</p>
+                    <a href="#" class="highlight-h">+read more</a>
+                </div>
+                <a class="highlight tag tag-right">from Dec issue</a>
+            </div>
+
+            <div class="pure-u-1-2 story" style="background: url('images/2.jpg'); background-size: cover; background-position: center;">
+                <div class="slide">
+                    <h2>Small Article</h2>
+                    <p>Nunc malesuada, lorem quis iaculis varius, ante ante facilisis lectus, commodo finibus mauris dolor vel ante. Ut non convallis mi, id facilisis risus. Ut suscipit elit ligula, at sodales lectus imperdiet id. Nullam eget lobortis enim. Curabitur dapibus ac risus vel pharetra.</p>
+                    <a href="#" class="highlight-h">+read more</a>
+                </div>
+                <a class="highlight tag tag-right">from Dec issue</a>
+            </div>
+
+            <div class="pure-u-1-2 story" style="background: url('images/4.jpg'); background-size: cover; background-position: center;">
+                <div class="slide">
+                    <h2>Small Article</h2>
+                    <p>Nunc malesuada, lorem quis iaculis varius, ante ante facilisis lectus, commodo finibus mauris dolor vel ante. Ut non convallis mi, id facilisis risus. Ut suscipit elit ligula, at sodales lectus imperdiet id. Nullam eget lobortis enim. Curabitur dapibus ac risus vel pharetra.</p>
+                    <a href="#" class="highlight-h">+read more</a>
+                </div>
+                <a class="highlight tag tag-right">from Dec issue</a>
+            </div>
+        </div>
         </div>
         <div class="pure-u-1-3">
-            <h1 id="featured"><span class="highlight-t">LATEST</span>ISSUE</h1>
+            <h1><span class="highlight-t">LATEST</span>ISSUE</h1>
+            <div class="pure-g"  id="latest">
+                <div class="pure-u-2-3">Cover</div>
+                <div class="pure-u-1-3">
+                    <span class="issue-no">Dec 2014</span>
+                    <span class="title">A forgotten kingdom</span>
+                    <span class="includes">80 Pages<br/>124 Photos<br/>30 Stories</span>
+                    <a class="highlight tag tag-right" id="purchase">+Purchase issue</a>
+                    <a id="subs">+Subscribe</a>
+                </div>
+            </div>
 
             <h1 id="featured"><span class="highlight-t">TWITTER</span>FEED</h1>
 
