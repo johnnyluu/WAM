@@ -505,11 +505,14 @@ header.top #nav .nav-li a{
 	border: 0;
 	line-height: 20px;
 	vertical-align: top;
+	width: 100%;
 }
 
 #home #newsletter-div input[type="email"]{
-	min-width: 300px;
-	width: 50%;
+	/*min-width: 300px;
+	width: 50%;*/
+	
+	box-sizing: border-box;
 }
 
 #home footer{
@@ -599,5 +602,16 @@ header.top #nav .nav-li a{
 	}
 	#home footer #contact-group {
 		right: -21px;
+	}
+	#home #newsletter-div{
+		padding: 30px 20px;
+	}
+	#home #newsletter-div input{
+		width: initial;
+	}
+
+	#home #newsletter-div input[type="email"]{
+		/*min-width: 300px;*/
+		width: 50%;
 	}
 }
