@@ -473,8 +473,11 @@ header.top #nav .nav-li a{
 }
 
 #home main #past #content-wrapper{
+	display: -webkit-flex;
     display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
+
 }
 #home main #past .content{
 	text-align: center;
