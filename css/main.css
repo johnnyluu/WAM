@@ -375,7 +375,7 @@ header.top #nav .nav-li a{
 
 #home main #go:hover{
 	top: -45px;
-	border-bottom-width: 15px;
+	height: 45px;
 }
 
 #home main .story{
@@ -511,7 +511,7 @@ header.top #nav .nav-li a{
 #home #newsletter-div input[type="email"]{
 	/*min-width: 300px;
 	width: 50%;*/
-	
+
 	box-sizing: border-box;
 }
 
