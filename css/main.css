@@ -556,7 +556,7 @@ header.top #nav .nav-li a{
 #home footer #contact-group {
 	padding: 0;
 	border-left: 0;
-	right: -21px;
+	right: 0;
 	min-width: 80%;
 }
 #home footer #contact-group a{
@@ -600,5 +600,8 @@ header.top #nav .nav-li a{
 	}
 	#home footer .content{
 		border-right: 2px solid lightgrey;
+	}
+	#home footer #contact-group {
+		right: -21px;
 	}
 }
