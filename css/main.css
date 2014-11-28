@@ -514,7 +514,7 @@ header.top #nav .nav-li a{
 	position: relative;
 	z-index: 5;
 	background: #E8EACE;
-	padding: 20px;
+	padding: 0;
 }
 #home footer h2, #home footer p{
 	margin: 0;
@@ -523,7 +523,6 @@ header.top #nav .nav-li a{
 }
 #home footer .content{
 	padding: 0 20px 60px 20px;
-	border-right: 2px solid lightgrey;
 }
 #home footer .tag-right{
 	bottom: 10px;
@@ -589,5 +588,11 @@ header.top #nav .nav-li a{
 	.nav-li{
 		padding: 25px 10px 10px 10px;
 		font-size: 1em;
+	}
+	#home footer{
+		padding: 20px;
+	}
+	#home footer .content{
+		border-right: 2px solid lightgrey;
 	}
 }
