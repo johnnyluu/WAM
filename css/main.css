@@ -40,7 +40,7 @@ div{
 /*overwirte pure*/
 .pure-g{
 
-	letter-spacing: initial;
+	letter-spacing: normal;
 }
 /*elements*/
 .container{
@@ -383,7 +383,7 @@ header.top #nav .nav-li a{
 
 #home main #go:hover{
 	top: -45px;
-	border-bottom-width: 15px;
+	height: 45px;
 }
 #home main .story{
 	text-align: center;
@@ -614,7 +614,7 @@ header.top #nav .nav-li a{
 		padding: 30px 20px;
 	}
 	#home #newsletter-div input{
-		width: initial;
+		width: inherit;
 	}
 
 	#home #newsletter-div input[type="email"]{
