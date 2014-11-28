@@ -607,7 +607,7 @@ header.top #nav .nav-li a{
 		padding: 30px 20px;
 	}
 	#home #newsletter-div input{
-		width: initial;
+		width: inherit;
 	}
 
 	#home #newsletter-div input[type="email"]{
