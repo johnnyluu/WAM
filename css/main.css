@@ -48,7 +48,7 @@ div{
 	margin: 0 auto;
 	position: relative;
 	background: white;
-	padding: 50px;
+	padding: 5px;
 
 }
 .wrapper{
@@ -149,14 +149,17 @@ header.top #nav .nav-li a{
 	color: white;
 }
 #nav{
-	width: 600px;
+	/*width: 600px;*/
+	min-width: 360px;
 	text-align: center;
 	margin: 0 auto;
 }
 .nav-li{
 	display: inline-block;
-	padding: 25px 10px 10px 10px;
+	padding: 25px 5px 10px 5px;
 	position: relative;
+	font-size: .8em;
+
 }
 .nav-li::before{
 	-webkit-transition: all .3s ease;
@@ -229,6 +232,7 @@ header.top #nav .nav-li a{
 	height: 50px;
 	padding: 10px 0;
 	padding-left: 15px;
+	display: none;
 }
 #logo.nav img{
 	height: 30px;
@@ -236,6 +240,7 @@ header.top #nav .nav-li a{
 
 #sub-top{
 	position: relative;
+	display: none;
 }
 #sub-top .nav-li::before{
 	opacity: 0;
@@ -291,6 +296,7 @@ header.top #nav .nav-li a{
 	background: url('../images/1.jpg');
 	background-position: center;
 	background-size: cover;
+	padding-top: 50px;
 }
 #home #slider #logo{
 	margin: 0 auto;
@@ -378,9 +384,6 @@ header.top #nav .nav-li a{
 	top: -45px;
 	border-bottom-width: 15px;
 }
-#home main #featured{
-	padding-right: 25px;
-}
 #home main .story{
 	text-align: center;
 	height: 300px;
@@ -460,6 +463,11 @@ header.top #nav .nav-li a{
 	bottom: 15px;
 	color: #666666;
 }
+
+#home .twitter-timeline{
+	height:300px;
+	width: 100% !important;
+}
 #home main #past{
 	margin-top: 25px;
 }
@@ -512,7 +520,7 @@ header.top #nav .nav-li a{
 	position: relative;
 	z-index: 5;
 	background: #E8EACE;
-	padding: 20px;
+	padding: 0;
 }
 #home footer h2, #home footer p{
 	margin: 0;
@@ -521,7 +529,6 @@ header.top #nav .nav-li a{
 }
 #home footer .content{
 	padding: 0 20px 60px 20px;
-	border-right: 2px solid lightgrey;
 }
 #home footer .tag-right{
 	bottom: 10px;
@@ -569,4 +576,29 @@ header.top #nav .nav-li a{
 	box-sizing: border-box;
 	text-align: center;
 
+}
+
+@media screen and (min-width: 48em){
+	#home main #featured{
+		padding-right: 25px;
+	}
+	.container{
+		padding: 50px;
+	}
+	#sub-top{
+		display: inline-block;
+	}
+	#logo.nav{
+		display: inline-block;
+	}
+	.nav-li{
+		padding: 25px 10px 10px 10px;
+		font-size: 1em;
+	}
+	#home footer{
+		padding: 20px;
+	}
+	#home footer .content{
+		border-right: 2px solid lightgrey;
+	}
 }
