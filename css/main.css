@@ -467,7 +467,9 @@ header.top #nav .nav-li a{
 }
 
 #home main #past #content-wrapper{
+	display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 #home main #past .content{
