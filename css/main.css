@@ -40,7 +40,7 @@ div{
 /*overwirte pure*/
 .pure-g{
 
-	letter-spacing: initial;
+	letter-spacing: normal;
 }
 /*elements*/
 .container{
