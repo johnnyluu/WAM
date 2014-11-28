@@ -457,6 +457,11 @@ header.top #nav .nav-li a{
 	bottom: 15px;
 	color: #666666;
 }
+
+#home .twitter-timeline{
+	height:300px;
+	width: 100% !important;
+}
 #home main #past{
 	margin-top: 25px;
 }
